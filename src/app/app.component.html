@@ -1,5 +1,12 @@
-<header class="grid bg-white p-3 shadow-4">
-  <p-button icon="pi pi-bars" iconPos="left"></p-button>
-  <span class="ml-3">Tesis de grado - Ingeniería Electrónica</span>
-  <span class="ml-auto">Heider Hernandez</span>
+<header class="grid bg-white p-2 justify-content-center align-items-center shadow-4">
+  <p-button class="ml-2" icon="pi pi-bars" label="Menú" iconPos="left" (click)="visibleSidebar=true"></p-button>
+  <img class="ml-auto" src="../assets/icons/logo_unipamplona.png" width="70px" alt="logo-unipamplona">
 </header>
+
+<p-sidebar [(visible)]="visibleSidebar" [baseZIndex]="10000">
+  <h3>Menu principal</h3>
+  <hr>
+  <p-menu [style]="{width: '100%'}" [model]="items"></p-menu>
+</p-sidebar>
+
+<router-outlet></router-outlet>
