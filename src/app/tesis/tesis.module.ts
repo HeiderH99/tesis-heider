@@ -6,6 +6,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { InfoPageComponent } from './pages/info-page/info-page.component';
 import { ApiComponent } from './pages/api/api.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { ContactComponent } from './pages/contact/contact.component';
   imports: [
     CommonModule,
     TesisRoutingModule,
+    PrimeNgModule
   ]
 })
 export class TesisModule { }

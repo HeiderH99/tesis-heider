@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
       },
       {
         label: 'API',
-        icon: 'pi pi-fw pi-book',
+        icon: 'pi pi-fw pi-server',
         routerLink: ['/tesis/api'],
         routerLinkActiveOptions: { exact: true },
         command: () => {
