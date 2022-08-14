@@ -7,6 +7,9 @@ import { InfoPageComponent } from './pages/info-page/info-page.component';
 import { ApiComponent } from './pages/api/api.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+import { CancerSectionComponent } from './components/cancer-section/cancer-section.component';
+import { StatsSectionComponent } from './components/stats-section/stats-section.component';
+import { DocsSectionComponent } from './components/docs-section/docs-section.component';
 
 
 @NgModule({
@@ -14,7 +17,10 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
     HomePageComponent,
     InfoPageComponent,
     ApiComponent,
-    ContactComponent
+    ContactComponent,
+    CancerSectionComponent,
+    StatsSectionComponent,
+    DocsSectionComponent
   ],
   imports: [
     CommonModule,

@@ -1,18 +1,17 @@
-<div class="mt-2">
-  <p-tabMenu [model]="items"></p-tabMenu>
-</div>
-
-
+<br>
 <div class="grid grid-nogutter surface-section text-800">
   <div class="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center ">
       <section>
+        <img src="../../../../assets//icons/logo_unipamplona.png" width="400px" alt="">
           <span class="block text-6xl font-bold mb-1">Tesis de grado Ingeniería Electrónica</span>
           <div class="text-6xl text-primary font-bold mb-3">Universidad de Pamplona</div>
           <div class="text-5xl text-secundary font-medium mb-3">Heider Hernández</div>
-          <p class="mt-0 mb-4 text-700 line-height-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="mt-0 mb-4 text-700 line-height-3">
+            DETECCION DE CANCER DE MAMA A PARTIR DE MAMOGRAFIAS EN FORMATO DICOM USANDO REDES NEURONALES Y SEGMENTACIÓN DE IMAGENES
+          </p>
 
           <button pButton pRipple label="Descargar pdf" type="button" class="mr-3 p-button-raised"></button>
-          <button pButton pRipple label="API" type="button" class="p-button-outlined"></button>
+          <button pButton pRipple label="API" (click)="goAPI()" type="button" class="p-button-outlined"></button>
       </section>
   </div>
   <div class="col-12 md:col-6 overflow-hidden">
