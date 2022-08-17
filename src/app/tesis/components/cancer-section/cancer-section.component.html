@@ -1,18 +1,86 @@
 <main class="flex flex-column p-3">
   <p-fieldset legend="¿Qué es el cáncer de mama?" [toggleable]="true">
-    <p>
-      El cáncer de mama es el crecimiento descontrolado de las células mamarias.
-      Para entender mejor el cáncer de mama, debemos entender cómo se desarrolla
-      cualquier cáncer. El cáncer es el resultado de mutaciones, o cambios
-      anómalos, en los genes que regulan el crecimiento de las células y las
-      mantienen sanas. Los genes se encuentran en el núcleo de las células, el
-      cual actúa como la “sala de control” de cada célula.
+    <p class="text-color text-base">
+      El cáncer de mama es una enfermedad en la cual las células de la mama se
+      multiplican sin control. Existen distintos tipos de cáncer de mama. El
+      tipo de cáncer de mama depende de qué células de la mama se vuelven
+      cancerosas.
+      <br /><br />
+      El cáncer de mama puede comenzar en distintas partes de la mama. Las mamas
+      constan de tres partes principales: lobulillos, conductos y tejido
+      conectivo. Los lobulillos son las glándulas que producen leche. Los
+      conductos son los tubos que transportan la leche al pezón. El tejido
+      conectivo (formado por tejido fibroso y adiposo) rodea y sostiene todas
+      las partes de la mama. La mayoría de los cánceres de mama comienzan en los
+      conductos o en los lobulillos.
     </p>
   </p-fieldset>
 
+  <span class="text-xl font-semibold mt-4 p-2 bg-primary w-auto border-round-lg"
+    >Tipos comunes de cáncer de mama</span
+  >
+
   <article class="grid mt-2 p-3 gap-3">
-    <div class="sm:col-12 md:col shadow-3 h-20rem border-round bg-white"></div>
-    <div class="sm:col-12 md:col shadow-3 h-20rem border-round bg-white"></div>
-    <div class="sm:col-12 md:col shadow-3 h-20rem border-round bg-white"></div>
+    <div class="sm:col-12 md:col shadow-3 border-round bg-white">
+      <h2>Carcinoma ductal infiltrante</h2>
+      <hr />
+      <p class="text-color">
+        Las células cancerosas se originan en los conductos y después salen de
+        ellos y se multiplican en otros tejidos mamarios. Estas células
+        cancerosas invasoras también pueden diseminarse, o formar metástasis, en
+        otras partes del cuerpo.
+      </p>
+    </div>
+    <div class="sm:col-12 md:col shadow-3 border-round bg-white">
+      <h2>Carcinoma lobulillar infiltrante</h2>
+      <hr />
+      <p class="text-color">
+        Las células cancerosas se originan en los lobulillos y después se
+        diseminan de los lobulillos a los tejidos mamarios cercanos. Estas
+        células cancerosas invasoras también pueden diseminarse a otras partes
+        del cuerpo.
+      </p>
+    </div>
   </article>
+
+  <br />
+
+  <p-card
+    header="¿Dónde se origina el cáncer de mama?"
+    subheader="Los cánceres de seno pueden originarse en diferentes partes del seno."
+    [style]="{ width: '100%' }"
+    styleClass="p-card-shadow"
+  >
+    <ul>
+      <li>
+        La mayoría de los cánceres de seno comienza en los conductos que llevan
+        la leche hacia el pezón (cánceres ductales)
+      </li>
+      <li>
+        Algunos cánceres se originan en las glándulas que producen leche
+        (cánceres lobulillares)
+      </li>
+      <li>
+        También hay otros tipos de cáncer de seno que son menos comunes como el
+        tumor filodes y el angiosarcoma
+      </li>
+      <li>
+        Un pequeño número de cánceres comienza en otros tejidos del seno. A
+        estos cánceres se les llama sarcomas y linfomas, y en realidad no se
+        consideran cánceres de seno.
+      </li>
+    </ul>
+    <ng-template pTemplate="footer">
+      <img src="../../../../assets/images/tejido_mamario_normal.jpg" alt="" />
+      <img src="../../../../assets/images/ganglios_linfaticos.jpg" alt="" />
+    </ng-template>
+  </p-card>
+
+  <section class="bg-primary mt-5 flex flex-column border-round">
+    <span
+      class="text-2xl border-round font-bold p-2 bg-primary text-bold shadow-6"
+      >Tratamiento del cáncer de seno</span
+    >
+    <app-treatments-section></app-treatments-section>
+  </section>
 </main>

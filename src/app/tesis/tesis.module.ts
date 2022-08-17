@@ -10,6 +10,7 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { CancerSectionComponent } from './components/cancer-section/cancer-section.component';
 import { StatsSectionComponent } from './components/stats-section/stats-section.component';
 import { DocsSectionComponent } from './components/docs-section/docs-section.component';
+import { TreatmentsSectionComponent } from './components/treatments-section/treatments-section.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { DocsSectionComponent } from './components/docs-section/docs-section.com
     ContactComponent,
     CancerSectionComponent,
     StatsSectionComponent,
-    DocsSectionComponent
+    DocsSectionComponent,
+    TreatmentsSectionComponent
   ],
   imports: [
     CommonModule,
