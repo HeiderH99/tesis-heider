@@ -1,1 +1,12 @@
-<p>stats-section works!</p>
+<main class="bg-black-alpha-10 pt-5">
+  <p-carousel [value]="pdfs" [responsiveOptions]="responsiveOptions" [numVisible]="1">
+    <ng-template let-pdf pTemplate="item">
+      <pdf-viewer
+        [src]="pdf.source"
+        [original-size]="true"
+        [render-text]="true"
+        style="width: 100%; height: 100vh"
+      ></pdf-viewer>
+    </ng-template>
+  </p-carousel>
+</main>

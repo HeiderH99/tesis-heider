@@ -11,6 +11,7 @@ import { CancerSectionComponent } from './components/cancer-section/cancer-secti
 import { StatsSectionComponent } from './components/stats-section/stats-section.component';
 import { DocsSectionComponent } from './components/docs-section/docs-section.component';
 import { TreatmentsSectionComponent } from './components/treatments-section/treatments-section.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { TreatmentsSectionComponent } from './components/treatments-section/trea
   imports: [
     CommonModule,
     TesisRoutingModule,
-    PrimeNgModule
+    PrimeNgModule,
+    PdfViewerModule
   ]
 })
 export class TesisModule { }
