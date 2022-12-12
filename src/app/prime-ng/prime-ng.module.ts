@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { CarouselModule } from 'primeng/carousel';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { FieldsetModule } from 'primeng/fieldset';
 import { FileUploadModule } from 'primeng/fileupload';
 import { InputTextModule } from 'primeng/inputtext';
@@ -23,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
     ButtonModule,
     CardModule,
     CarouselModule,
+    ConfirmDialogModule,
     FieldsetModule,
     FileUploadModule,
     InputTextModule,

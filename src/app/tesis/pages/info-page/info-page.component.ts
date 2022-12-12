@@ -29,13 +29,13 @@ export class InfoPageComponent implements OnInit {
           this.optionInfo = 1;
         },
       },
-      {
-        label: 'Documentation',
-        icon: 'pi pi-fw pi-file',
-        command: () => {
-          this.optionInfo = 2;
-        },
-      },
+      // {
+      //   label: 'Documentation',
+      //   icon: 'pi pi-fw pi-file',
+      //   command: () => {
+      //     this.optionInfo = 2;
+      //   },
+      // },
     ];
   }
 }
