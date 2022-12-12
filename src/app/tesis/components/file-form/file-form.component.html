@@ -1,0 +1,35 @@
+<div class="surface-card p-4 shadow-2 border-round w-full">
+  <div class="text-center mb-5">
+    <img
+      src="../../../../assets/icons/logo_unipamplona.png"
+      alt="Image"
+      height="50"
+      class="mb-3"
+    />
+    <div class="text-900 text-3xl font-medium mb-3">
+      Vamos a hacer una prueba!
+    </div>
+    <span class="text-600 font-medium line-height-3"
+      >Carga una imagen histopatológica para detectar el cáncer de mama.</span
+    >
+  </div>
+
+  <div>
+    <p-fileUpload
+      name="demo[]"
+      url="./upload.php"
+      (onUpload)="onUpload($event)"
+      [multiple]="true"
+      accept="image/*"
+      [maxFileSize]="1000000"
+    >
+      <ng-template pTemplate="content">
+        <ul *ngIf="uploadedFiles.length">
+          <li *ngFor="let file of uploadedFiles">
+            {{ file.name }} - {{ file.size }} bytes
+          </li>
+        </ul>
+      </ng-template>
+    </p-fileUpload>
+  </div>
+</div>

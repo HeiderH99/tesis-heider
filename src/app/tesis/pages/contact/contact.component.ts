@@ -12,4 +12,13 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onContact(param: string) {
+    if (param === 'LinkedIn') window.open('http://www.linkedin.com/in/heiderreyhernandez', '_blank')
+    if (param === 'Facebook') window.open('https://www.facebook.com/heider.hernandez.92?mibextid=ZbWKwL', '_blank')
+    if (param === 'Instagram') window.open('https://facebook.com', '_blank')
+    if (param === 'WhatsApp') window.open('https://facebook.com', '_blank')
+    if (param === 'Email') window.open('https://facebook.com', '_blank')
+    if (param === 'Github') window.open('https://github.com/HeiderH99', '_blank')
+  }
+
 }

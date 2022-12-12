@@ -12,6 +12,7 @@ import { StatsSectionComponent } from './components/stats-section/stats-section.
 import { DocsSectionComponent } from './components/docs-section/docs-section.component';
 import { TreatmentsSectionComponent } from './components/treatments-section/treatments-section.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { FileFormComponent } from './components/file-form/file-form.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     CancerSectionComponent,
     StatsSectionComponent,
     DocsSectionComponent,
-    TreatmentsSectionComponent
+    TreatmentsSectionComponent,
+    FileFormComponent
   ],
   imports: [
     CommonModule,
