@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class FileService {
 
-  private URL: string = 'https://3.230.135.169:443';
+  private URL: string = 'http://3.230.135.169:443';
 
   constructor(private http: HttpClient) { }
 
