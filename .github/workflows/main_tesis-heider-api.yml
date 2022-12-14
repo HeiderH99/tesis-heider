@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'Tesis-heider-Api'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CDA9DD71E5BA41BEACECB724ECBA16AB }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D5A96FE3FF624B9B97600D679FD9329D }}
           package: .
